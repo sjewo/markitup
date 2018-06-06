@@ -43,6 +43,10 @@
 					$parser = new markitup_markdown();
 					return $parser->text($content);
 				break;
+				case 'markdownExtra':
+					$parser = new markitup_markdownExtra();
+					return $parser->text($content);
+				break;
 				case 'textile':
 					$parser = new markitup_textile();
 					return $parser->custom_parse($content);
